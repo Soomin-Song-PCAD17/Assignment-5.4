@@ -53,7 +53,20 @@ void Demo2()
             array[i, j] = int.Parse(Console.ReadLine());
         }
     }
+
+    for (int i = 0; i < matrixSize; i++)
+    {
+        for (int j = 0; j < matrixSize; j++)
+        {
+            Console.Write($"{array[i, j]}\t");
+        }
+        Console.WriteLine();
+    }
+
     Console.WriteLine($"Addition of the right Diagonal elements is : {DiagonalMatrixSum(array)}");
+
+    Console.ReadKey();
+    Console.Clear();
 }
 int DiagonalMatrixSum(int[,] matrix)
 {
