@@ -73,7 +73,7 @@ int DiagonalMatrixSum(int[,] matrix)
     int sum = 0;
     for(int i=0; i < matrix.GetLength(0); i++)
     {
-        sum += matrix[i,i];
+        sum += matrix[i, matrix.GetLength(0)-1-i];
     }
     return sum;
 }
